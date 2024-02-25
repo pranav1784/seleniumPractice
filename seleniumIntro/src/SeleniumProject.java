@@ -45,7 +45,7 @@ public class SeleniumProject {
 
 				Thread.sleep(1000);
 
-				driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
+				driver.findElement(By.cssSelector("#inputUsername")).sendKeys("pranav");
 
 				driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 
