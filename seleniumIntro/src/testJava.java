@@ -24,6 +24,7 @@ public class testJava {
 		String result=driver.findElement(By.tagName("p")).getText();
 		System.out.println("this is: "+result);
 		Assert.assertEquals(result,"You are successfully logged in.");
+		
 
 	}
 
