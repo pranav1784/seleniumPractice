@@ -14,9 +14,9 @@ public class EndtoEndTravelWebsite {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://rahulshettyacademy.com/dropdownsPractise/"); //URL in the browser
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/"); // URL in the browser
 
 		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
 
@@ -26,17 +26,18 @@ public class EndtoEndTravelWebsite {
 
 		Thread.sleep(2000);
 
-		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']"))
+				.click();
 
 		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
 
-		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5"))
+		if (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5"))
 
 		{
 
-		System.out.println("its disabled");
+			System.out.println("its disabled");
 
-		Assert.assertTrue(true);
+			Assert.assertTrue(true);
 
 		}
 
@@ -44,7 +45,7 @@ public class EndtoEndTravelWebsite {
 
 		{
 
-		Assert.assertTrue(false);
+			Assert.assertTrue(false);
 
 		}
 
@@ -52,13 +53,13 @@ public class EndtoEndTravelWebsite {
 
 		driver.findElement(By.id("divpaxinfo")).click();
 
-		   Thread.sleep(2000L);
+		Thread.sleep(2000L);
 
-		for(int i=1;i<5;i++)
+		for (int i = 1; i < 5; i++)
 
 		{
 
-		driver.findElement(By.id("hrefIncAdt")).click();
+			driver.findElement(By.id("hrefIncAdt")).click();
 
 		}
 
@@ -76,6 +77,6 @@ public class EndtoEndTravelWebsite {
 
 		// driver.findElement(By.name("ctl00$mainContent$btn_FindFlights")).click();
 
-		}
+	}
 
 }
