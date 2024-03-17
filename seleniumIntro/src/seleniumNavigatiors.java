@@ -21,7 +21,6 @@ driver.navigate().to("https://rahulshettyacademy.com");
 driver.navigate().back();
 
 driver.navigate().forward();
-
 	}
 
 }
